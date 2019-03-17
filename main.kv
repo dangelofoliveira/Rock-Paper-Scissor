@@ -1,0 +1,41 @@
+GridLayout:
+	id: grid
+	cols: 1
+	spacing: 10
+	size_hint_y: None
+	
+	<BoxLayout>:
+		size_hint: 1, .6
+	
+	<BoxLayout>:
+		
+		Button:
+			
+			size_hint: .5, .2
+			id: rock
+			Image:
+				source: "./rock.png"
+				center_x: self.parent.center_x
+				center_y: self.parent.center_y
+				size: 350, 350
+			
+		Button:
+			
+			size_hint: .5, .2
+			id: paper
+			Image:
+				source: "./paper.png"
+				center_x: self.parent.center_x
+				center_y: self.parent.center_y
+				size: 350, 350
+				
+		Button:
+			
+			size_hint: .5, .2
+			id: scissor
+			Image:
+				source: "./scissors.png"
+				center_x: self.parent.center_x
+				center_y: self.parent.center_y
+				size: 350, 350
+		
